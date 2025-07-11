@@ -1,0 +1,25 @@
+{
+  "name": "gestionale_front_end",
+  "version": "1.0.0",
+  "description": "Questo progetto è un'applicazione web semplice per l'inserimento di utenti (nome ed email) e il salvataggio dei dati in un file JSON lato server tramite Node.js.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PseudoCoder23/gestionale_frontend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/PseudoCoder23/gestionale_frontend/issues"
+  },
+  "homepage": "https://github.com/PseudoCoder23/gestionale_frontend#readme",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}

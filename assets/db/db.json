@@ -1,0 +1,44 @@
+[
+  {
+    "nome": "John",
+    "cognome": "Snow",
+    "email": "johnsnow@gmail.com",
+    "tel": "3268769878"
+  },
+  {
+    "nome": "Thereon",
+    "cognome": "Lannister",
+    "email": "thereonlannister@gmail.com",
+    "tel": "3467890203"
+  },
+  {
+    "nome": "Daenerys",
+    "cognome": "Targarien",
+    "email": "daenerysthargarien@gmail.com",
+    "tel": "3248903546"
+  },
+  {
+    "nome": "pippo",
+    "cognome": "peppo",
+    "email": "peppo@gmail.com",
+    "tel": "123"
+  },
+  {
+    "nome": "pippo",
+    "cognome": "peppo",
+    "email": "peppo@gmail.com",
+    "tel": "123"
+  },
+  {
+    "nome": "pippo",
+    "cognome": "peppo",
+    "email": "peppo@gmail.com",
+    "tel": "123"
+  },
+  {
+    "nome": "pino",
+    "cognome": "scotto",
+    "email": "pino@gmail.com",
+    "tel": "345"
+  }
+]
