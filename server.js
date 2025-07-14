@@ -10,6 +10,10 @@ app.use(express.static(__dirname));
 
 const dbPath = path.join(__dirname, 'assets', 'db', 'db.json');
 
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, 'aggiungiStudenti.html'));
+});
+
 app.post('/api/utenti', (req, res) => {
   const nuovoUtente = req.body;
   fs.readFile(dbPath, 'utf8', (err, data) => {

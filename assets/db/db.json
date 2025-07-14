@@ -40,5 +40,41 @@
     "cognome": "scotto",
     "email": "pino@gmail.com",
     "tel": "345"
+  },
+  {
+    "nome": "Gigio",
+    "cognome": "Ceppa",
+    "dataNascita": "2000-12-11",
+    "CF": "scavdfebcnhdnfmk",
+    "email": "gigio@ceppa.it",
+    "tel": "2345654378"
+  },
+  {
+    "nome": "Geronimo",
+    "cognome": "Lippo",
+    "dataNascita": "2010-09-12",
+    "CF": "deftr",
+    "email": "geronimolippo@gmail.com",
+    "tel": "3452617890"
+  },
+  {
+    "nome": "Geppo",
+    "cognome": "Gippo",
+    "dataNascita": "2014-12-12",
+    "CF": "qwdscvgftegbdnjp",
+    "email": "geppo@gippo.it",
+    "tel": "3452617890",
+    "corso": "Pizzaiolo",
+    "note": ""
+  },
+  {
+    "nome": "Geppo",
+    "cognome": "Gippo",
+    "dataNascita": "2014-12-12",
+    "CF": "qwdscvgftegbdnjp",
+    "email": "geppo@gippo.it",
+    "tel": "3452617890",
+    "corso": "Pizzaiolo",
+    "note": "provola"
   }
 ]

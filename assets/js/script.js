@@ -1,41 +1,43 @@
-document.getElementById('inserisciStudenti').addEventListener('submit',function(e) {
-    e.preventDefault;
-    const nome = document.getElementById('nome_studente').value;
-    const cognome = document.getElementById('cognome_studente').value;
-    const email = document.getElementById('mail_studente').value;
-    tel = document.getElementById('telefono_studente').value;
-    console.log(nome,cognome,email,tel);
+document
+  .getElementById("inserisciStudenti")
+  .addEventListener("submit", function (e) {
+    e.preventDefault();
+    const dati = {
+      nome: document.getElementById("nome_studente").value.trim(),
+      cognome: document.getElementById("cognome_studente").value.trim(),
+      dataNascita: document.getElementById("dataNascita").value.trim(),
+      CF: document.getElementById("CF").value.trim(),
+      email: document.getElementById("mail_studente").value.trim(),
+      tel: document.getElementById("telefono_studente").value.trim(),
+      corso: document.getElementById("selectCorso").value.trim(),
+      note: document.getElementById("note").value.trim(),
 
-/*========== Validazione dati ==========*/
+    };
+    console.log(dati);
 
-    if (tel.length !== 10) {
-    alert("Telefono errato");
-}
+    /*========== Validazione dati ==========*/
 
+    if (dati.tel.length !== 10 || !/^\d{10}$/.test(dati.tel)) {
+      alert("Telefono errato");
+      return;
+    }
 
-/*========= invia al form ========*/
-    fetch('/api/utenti', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ nome, cognome, email, tel })
-  })
-  .then(res => res.json())
-  .then(data => alert(data.message))
-  .catch(err => alert("Errore nel salvataggio"));
-});
+    if (dati.CF.length !== 16) {
+      alert("Codice Fiscale Errato");
+      return;
+    }
+
+    /*========= invia al form ========*/
+    setTimeout(() => {
+      fetch("/api/utenti", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(dati),
+      })
+        .then((res) => res.json())
+        .then((data) => alert(data.message))
+        .catch((err) => alert("Errore nel salvataggio"));
+    }, 1000);
+  });
 
 /*========= GET ========*/
-
-fetch('/api/utenti', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ nome, cognome, email, tel })
-  })
-  .then(res => res.json())
-  .then(data => alert(data.message))
-  .catch(err => alert("Errore nel salvataggio"));
-});
-
-
-
-

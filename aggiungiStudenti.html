@@ -30,6 +30,24 @@
         />
       </div>
       <div class="col-md-6">
+        <label for="dataNascita" class="form-label">Data di Nascita</label>
+        <input
+          type="date"
+          class="form-control"
+          id="dataNascita"
+          required
+        />
+      </div>
+      <div class="col-md-6">
+        <label for="CF" class="form-label">Codice Fiscale</label>
+        <input
+          type="text"
+          class="form-control"
+          id="CF"
+          required
+        />
+      </div>
+      <div class="col-md-6">
         <label for="mail_studente" class="form-label">eMail</label>
         <input type="email" class="form-control" id="mail_studente" required />
       </div>
@@ -42,6 +60,24 @@
           required
         />
       </div>
+      <div class="col-md-6">
+        <label for="selectCorso" class="form-label">Corso</label>
+        <select id="selectCorso" class="form-select" aria-label="Default select example" required>
+          <option selected>Seleziona Corso</option>
+          <option value="Java">Java</option>
+          <option value="Gelataio">Gelataio</option>
+          <option value="Pizzaiolo">Pizzaiolo</option>
+        </select>
+      </div>
+      <div class="col-md-6">
+        <label for="note" class="form-label">Note</label>
+        <input
+          type="text"
+          class="form-control"
+          id="note"
+        />
+      </div>
+      
       <div class="col-12">
         <button type="submit" class="btn btn-primary">Invia</button>
       </div>
