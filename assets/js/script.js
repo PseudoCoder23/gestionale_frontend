@@ -3,22 +3,30 @@ document
   .addEventListener("submit", function (e) {
     e.preventDefault();
     const dati = {
-      nome: document.getElementById("nome_studente").value.trim(),
-      cognome: document.getElementById("cognome_studente").value.trim(),
-      dataNascita: document.getElementById("dataNascita").value.trim(),
-      CF: document.getElementById("CF").value.trim(),
-      email: document.getElementById("mail_studente").value.trim(),
-      tel: document.getElementById("telefono_studente").value.trim(),
+      infoPersonali: {
+        nome: document.getElementById("nome_studente").value.trim(),
+        cognome: document.getElementById("cognome_studente").value.trim(),
+        CF: document.getElementById("CF").value.trim(),
+        email: document.getElementById("mail_studente").value.trim(),
+        tel: document.getElementById("telefono_studente").value.trim(),
+        genere: document.getElementById("genere").value.trim(),
+        infoNascita: {
+          dataNascita: document.getElementById("dataNascita").value.trim(),
+          luogoNascita: document.getElementById("luogoNascita").value.trim(),
+          nazionalita: document.getElementById("nazionalita").value.trim(),
+        },
+        residenza: {
+          via: document.getElementById("via_studente").value.trim(),
+          cap: document.getElementById("cap_studente").value.trim(),
+          comune: document.getElementById("comune_studente").value.trim(),
+          provincia: document.getElementById("provincia_studente").value.trim(),
+          nazione: document.getElementById("nazione_studente").value.trim(),
+        }
+      },
       corso: document.getElementById("selectCorso").value.trim(),
       note: document.getElementById("note").value.trim(),
-      luogoNascita: document.getElementById("luogoNascita").value.trim(),
-      nazionalita: document.getElementById("nazionalita").value.trim(),
-      genere: document.getElementById("genere").value.trim(),
-      via: document.getElementById("via_studente").value.trim(),
-      cap: document.getElementById("cap_studente").value.trim(),
-      comune: document.getElementById("comune_studente").value.trim(),
-      provincia: document.getElementById("provincia_studente").value.trim(),
-      nazione: document.getElementById("nazione_studente").value.trim(),
+
+
     };
     console.log(dati);
 
