@@ -24,6 +24,31 @@
       "corso": "Seleziona Corso",
       "note": "",
       "id": "p78g"
+    },
+    {
+      "infoPersonali": {
+        "nome": "Giorgio",
+        "cognome": "Ragusa",
+        "CF": "dhfgsbsnfjfkemdh",
+        "email": "riogigo.asugar@gmail.com",
+        "tel": "3490998282",
+        "genere": "M",
+        "infoNascita": {
+          "dataNascita": "1984-09-23",
+          "luogoNascita": "Roma",
+          "nazionalita": "ita"
+        },
+        "residenza": {
+          "via": "mcjd",
+          "cap": "00135",
+          "comune": "smjfrjf",
+          "provincia": "RM",
+          "nazione": "Italia"
+        }
+      },
+      "corso": "Java",
+      "note": "boh",
+      "id": "335c"
     }
   ]
 }

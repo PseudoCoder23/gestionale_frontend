@@ -12,6 +12,8 @@
     // 1️⃣ Ottieni l'ID utente dal pathname: /utente/id
     const path = window.location.pathname;
     const idUtente = path.split("/").pop();
+    console.log(idUtente);
+    
     
 
     if (!idUtente) {
@@ -23,15 +25,15 @@
           if (!res.ok) throw new Error('Utente non trovato');
           return res.json();
         })
-        .then(utente => {
+        .then(studente => {
           // 3️⃣ Mostra i dati in pagina
           document.getElementById('infoUtente').innerHTML = `
             <ul>
-              <li><strong>Nome:</strong> ${utente.nome}</li>
-              <li><strong>Cognome:</strong> ${utente.cognome}</li>
-              <li><strong>Email:</strong> ${utente.email}</li>
-              <li><strong>Telefono:</strong> ${utente.telefono}</li>
-              <li><strong>Corso:</strong> ${utente.corso}</li>
+              <li><strong>Nome:</strong> ${studente.infoPersonali.nome}</li>
+              <li><strong>Cognome:</strong> ${studente.infoPersonali.cognome}</li>
+              <li><strong>Email:</strong> ${studente.infoPersonali.email}</li>
+              <li><strong>Telefono:</strong> ${studente.infoPersonali.tel}</li>
+              <li><strong>Corso:</strong> ${studente.corso}</li>
             </ul>
           `;
         })

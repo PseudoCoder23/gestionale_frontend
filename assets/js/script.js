@@ -64,7 +64,7 @@ document
       console.log("Invio dei dati al server in corso...");
 
       try {
-        const res = await fetch('http://localhost:3000/api/utenti');
+        const res = await fetch('/api/utenti');
         if (!res.ok) throw new Error("Impossibile leggere gli utenti esistenti");
         const utenti = await res.json();
 
@@ -78,7 +78,7 @@ document
 
         dati.id = id;
 
-        const postResponse = await fetch('http://localhost:3000/api/utenti', {
+        const postResponse = await fetch('/api/utenti', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json'

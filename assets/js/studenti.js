@@ -31,7 +31,7 @@ fetch("http://localhost:3000/api/utenti/")
             <td>${studente.infoPersonali.tel}</td>
             <td>${studente.corso}</td>
             <td>${studente.note}</td>
-            <td><a class="btn btn-primary" href="http://" target="_blank" rel="noopener noreferrer">Altro</a></td>
+            <td><a class="btn btn-primary" href="http://localhost:3000/utente/${studente.id}" target="_blank" rel="noopener noreferrer">Altro</a></td>
         </tr> `;
         tabella.innerHTML += rowTable;
     });
