@@ -11,6 +11,14 @@ document
       tel: document.getElementById("telefono_studente").value.trim(),
       corso: document.getElementById("selectCorso").value.trim(),
       note: document.getElementById("note").value.trim(),
+      luogoNascita: document.getElementById("luogoNascita").value.trim(),
+      nazionalita: document.getElementById("nazionalita").value.trim(),
+      genere: document.getElementById("genere").value.trim(),
+      via: document.getElementById("via_studente").value.trim(),
+      cap: document.getElementById("cap_studente").value.trim(),
+      comune: document.getElementById("comune_studente").value.trim(),
+      provincia: document.getElementById("provincia_studente").value.trim(),
+      pnazione: document.getElementById("nazione_studente").value.trim(),
 
     };
     console.log(dati);

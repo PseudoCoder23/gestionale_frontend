@@ -76,5 +76,23 @@
     "tel": "3452617890",
     "corso": "Pizzaiolo",
     "note": "provola"
+  },
+  {
+    "nome": "Walter",
+    "cognome": "White",
+    "dataNascita": "1950-02-15",
+    "CF": "whiwlt50p34h501t",
+    "email": "walterwhite@lolpolloshermannos.com",
+    "tel": "2345678987",
+    "corso": "Gelataio",
+    "note": "Heisenberg",
+    "luogoNascita": "Albuquerque",
+    "nazionalita": "Stati Uniti",
+    "genere": "M",
+    "via": "NonLoSo",
+    "cap": "893846",
+    "comune": "Albuquerque",
+    "provincia": "Albuquerque",
+    "pnazione": "New Mexico"
   }
 ]

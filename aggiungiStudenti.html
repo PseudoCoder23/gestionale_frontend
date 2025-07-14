@@ -42,14 +42,43 @@
         <label for="CF" class="form-label">Codice Fiscale</label>
         <input
           type="text"
-          class="form-control"
+          class="form-control text-uppercase"
           id="CF"
           required
         />
       </div>
+
+      <div class="col-md-6">
+        <label for="luogoNascita" class="form-label">Luogo di nascita</label>
+        <input
+          type="text"
+          class="form-control"
+          id="luogoNascita" 
+        />
+      </div>
+
+      <div class="col-md-6">
+        <label for="nazionalita" class="form-label">Nazionalità</label>
+        <input
+          type="text"
+          class="form-control"
+          id="nazionalita"
+        />
+      </div>
+
+      <div class="col-md-6">
+        <label for="genere" class="form-label">Genere</label>
+        <select id="genere" class="form-select" aria-label="Default select example" required>
+          <option selected>Seleziona Genere</option>
+          <option value="M">M</option>
+          <option value="F">F</option>
+          <option value="Altro">Altro</option>
+        </select>
+      </div>
+
       <div class="col-md-6">
         <label for="mail_studente" class="form-label">eMail</label>
-        <input type="email" class="form-control" id="mail_studente" required />
+        <input type="email" class="form-control text-lowercase" id="mail_studente" required />
       </div>
       <div class="col-md-6">
         <label for="telefono_studente" class="form-label">Telefono</label>
@@ -57,9 +86,54 @@
           type="tel"
           class="form-control"
           id="telefono_studente"
-          required
         />
       </div>
+
+      <div class="col-md-6">
+        <label for="via_studente" class="form-label">Via</label>
+        <input
+          type="text"
+          class="form-control"
+          id="via_studente"
+        />
+      </div>
+
+      <div class="col-md-6">
+        <label for="cap_studente" class="form-label">Cap</label>
+        <input
+          type="number"
+          class="form-control"
+          id="cap_studente"
+        />
+      </div>
+
+      <div class="col-md-6">
+        <label for="comune_studente" class="form-label">Comune</label>
+        <input
+          type="text"
+          class="form-control"
+          id="comune_studente"
+        />
+      </div>
+
+      <div class="col-md-6">
+        <label for="provincia_studente" class="form-label">Provincia</label>
+        <input
+          type="text"
+          class="form-control"
+          id="provincia_studente"
+        />
+      </div>
+
+      <div class="col-md-6">
+        <label for="nazione_studente" class="form-label">Nazione</label>
+        <input
+          type="text"
+          class="form-control"
+          id="nazione_studente"
+        />
+      </div>
+
       <div class="col-md-6">
         <label for="selectCorso" class="form-label">Corso</label>
         <select id="selectCorso" class="form-select" aria-label="Default select example" required>
@@ -78,9 +152,10 @@
         />
       </div>
       
-      <div class="col-12">
+      <div class="col-6">
         <button type="submit" class="btn btn-primary">Invia</button>
       </div>
+      <div class="col-6"><a class="btn btn-primary" href="http://localhost:3000/vediStudenti.html">Vedi Studenti</a></div>
     </form>
 
     <script
