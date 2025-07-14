@@ -18,8 +18,7 @@ document
       cap: document.getElementById("cap_studente").value.trim(),
       comune: document.getElementById("comune_studente").value.trim(),
       provincia: document.getElementById("provincia_studente").value.trim(),
-      pnazione: document.getElementById("nazione_studente").value.trim(),
-
+      nazione: document.getElementById("nazione_studente").value.trim(),
     };
     console.log(dati);
 
