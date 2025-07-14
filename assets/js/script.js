@@ -2,7 +2,21 @@ document
   .getElementById("inserisciStudenti")
   .addEventListener("submit", function (e) {
     e.preventDefault();
+    const now = new Date();
+    const opzioni = {
+      timeZone: 'Europe/Rome',
+      day: '2-digit',
+      month: '2-digit',
+      year: 'numeric',
+      hour: '2-digit',
+      minute: '2-digit',
+      hour12: false
+    };
+    const formatoLocale = new Intl.DateTimeFormat('it-IT', opzioni).formatToParts(now);
+    const parti = Object.fromEntries(formatoLocale.map(({ type, value }) => [type, value]));
+
     const dati = {
+
       infoPersonali: {
         nome: document.getElementById("nome_studente").value.trim(),
         cognome: document.getElementById("cognome_studente").value.trim(),
@@ -25,6 +39,11 @@ document
       },
       corso: document.getElementById("selectCorso").value.trim(),
       note: document.getElementById("note").value.trim(),
+      timestamp: {
+        dataAggiunta: `${parti.day}/${parti.month}/${parti.year}`,
+        orarioAggiunta: `${parti.hour}:${parti.minute}`,
+        timestampLocale: `${parti.day}-${parti.month}-${parti.year}_${parti.hour}-${parti.minute}`
+      }
 
 
     };
