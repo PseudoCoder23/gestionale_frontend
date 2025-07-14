@@ -64,12 +64,12 @@ document
       console.log("Invio dei dati al server in corso...");
 
       try {
-        const res = await fetch('/api/utenti');
-        if (!res.ok) throw new Error("Impossibile leggere gli utenti esistenti");
-        const utenti = await res.json();
+        const res = await fetch('/api/studenti');
+        if (!res.ok) throw new Error("Impossibile leggere gli studenti esistenti");
+        const studenti = await res.json();
 
         let id;
-        const esisteID = (id) => utenti.some(u => u.id === id);
+        const esisteID = (id) => studenti.some(u => u.id === id);
 
         // Genera un ID unico
         do {
@@ -78,7 +78,7 @@ document
 
         dati.id = id;
 
-        const postResponse = await fetch('/api/utenti', {
+        const postResponse = await fetch('/api/studenti', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json'

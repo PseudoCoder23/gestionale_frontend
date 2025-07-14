@@ -2,32 +2,32 @@
 <html lang="it">
 <head>
   <meta charset="UTF-8">
-  <title>Dati utente</title>
+  <title>Dati studente</title>
 </head>
 <body>
-  <h1>Dati utente</h1>
-  <div id="infoUtente"></div>
+  <h1>Dati studente</h1>
+  <div id="infoStudente"></div>
 
   <script>
-    // 1️⃣ Ottieni l'ID utente dal pathname: /utente/id
+    // 1️⃣ Ottieni l'ID studente dal pathname: /studente/id
     const path = window.location.pathname;
-    const idUtente = path.split("/").pop();
-    console.log(idUtente);
+    const idStudente = path.split("/").pop();
+    console.log(idStudente);
     
     
 
-    if (!idUtente) {
-      document.getElementById('infoUtente').textContent = 'ID utente non fornito.';
+    if (!idStudente) {
+      document.getElementById('infoStudente').textContent = 'ID studente non fornito.';
     } else {
-      // 2️⃣ Richiama l'API per un singolo utente
-      fetch(`/api/utente/${idUtente}`)
+      // 2️⃣ Richiama l'API per un singolo studente
+      fetch(`/api/studente/${idStudente}`)
         .then(res => {
-          if (!res.ok) throw new Error('Utente non trovato');
+          if (!res.ok) throw new Error('studente non trovato');
           return res.json();
         })
         .then(studente => {
           // 3️⃣ Mostra i dati in pagina
-          document.getElementById('infoUtente').innerHTML = `
+          document.getElementById('infoStudente').innerHTML = `
             <ul>
               <li><strong>Nome:</strong> ${studente.infoPersonali.nome}</li>
               <li><strong>Cognome:</strong> ${studente.infoPersonali.cognome}</li>
@@ -38,7 +38,7 @@
           `;
         })
         .catch(err => {
-          document.getElementById('infoUtente').textContent = err.message;
+          document.getElementById('infoStudente').textContent = err.message;
         });
     }
   </script>

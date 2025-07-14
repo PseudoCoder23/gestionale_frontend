@@ -1,5 +1,5 @@
 {
-  "utenti": [
+  "studenti": [
     {
       "infoPersonali": {
         "nome": "vla",
@@ -49,6 +49,31 @@
       "corso": "Java",
       "note": "boh",
       "id": "335c"
+    },
+    {
+      "infoPersonali": {
+        "nome": "valerio",
+        "cognome": "corda",
+        "CF": "cgagsgsgsgsgsgsg",
+        "email": "info@valerioco.ti",
+        "tel": "4646467896",
+        "genere": "F",
+        "infoNascita": {
+          "dataNascita": "2025-07-16",
+          "luogoNascita": "roma",
+          "nazionalita": "ita"
+        },
+        "residenza": {
+          "via": "",
+          "cap": "",
+          "comune": "",
+          "provincia": "",
+          "nazione": ""
+        }
+      },
+      "corso": "Seleziona Corso",
+      "note": "",
+      "id": "oh5f"
     }
   ]
 }
