@@ -1,50 +1,29 @@
-[
-  {
-    "infoPersonali": {
-      "nome": "Girolamo",
-      "cognome": "Seghetti",
-      "CF": "ersdfgcbsghdnchg",
-      "email": "girolamo@seghetti.it",
-      "tel": "3245346787",
-      "genere": "M",
-      "infoNascita": {
-        "dataNascita": "2013-12-11",
-        "luogoNascita": "Roma",
-        "nazionalita": "Italiana"
+{
+  "utenti": [
+    {
+      "infoPersonali": {
+        "nome": "vla",
+        "cognome": "cor",
+        "CF": "crdvlar0798ydrty",
+        "email": "info@valeirocor.it",
+        "tel": "5437383648",
+        "genere": "M",
+        "infoNascita": {
+          "dataNascita": "2025-07-09",
+          "luogoNascita": "roma",
+          "nazionalita": "ita"
+        },
+        "residenza": {
+          "via": "",
+          "cap": "",
+          "comune": "",
+          "provincia": "",
+          "nazione": ""
+        }
       },
-      "residenza": {
-        "via": "Via di qua, 11",
-        "cap": "00100",
-        "comune": "Roma",
-        "provincia": "Roma",
-        "nazione": "Italia"
-      }
-    },
-    "corso": "Java",
-    "note": "gnegnegne"
-  },
-  {
-    "infoPersonali": {
-      "nome": "Girolamo",
-      "cognome": "Seghetti",
-      "CF": "ersdfgcbsghdnchg",
-      "email": "girolamo@seghetti.it",
-      "tel": "3245346787",
-      "genere": "M",
-      "infoNascita": {
-        "dataNascita": "2013-12-11",
-        "luogoNascita": "Roma",
-        "nazionalita": "Italiana"
-      },
-      "residenza": {
-        "via": "Via di qua, 11",
-        "cap": "00100",
-        "comune": "Roma",
-        "provincia": "Roma",
-        "nazione": "Italia"
-      }
-    },
-    "corso": "Java",
-    "note": "gnegnegne"
-  }
-]
+      "corso": "Seleziona Corso",
+      "note": "",
+      "id": "p78g"
+    }
+  ]
+}
