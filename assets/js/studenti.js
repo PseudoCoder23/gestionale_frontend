@@ -10,12 +10,12 @@ fetch("http://localhost:3000/api/utenti/")
   .then((studenti) => {
     studenti.forEach((studente) => {
       console.log(
-        studente.CF,
-        studente.nome,
-        studente.cognome,
-        studente.dataNascita,
-        studente.email,
-        studente.tel,
+        studente.infoPersonali.CF,
+        studente.infoPersonali.nome,
+        studente.infoPersonali.cognome,
+        studente.infoPersonali.infoNascita.dataNascita,
+        studente.infoPersonali.email,
+        studente.infoPersonali.tel,
         studente.corso,
         studente.note
       );
@@ -23,14 +23,15 @@ fetch("http://localhost:3000/api/utenti/")
       const tabella = document.getElementById("tabella");
     const rowTable = `
         <tr>
-            <td>${studente.CF}</td>
-            <td>${studente.nome}</td>
-            <td>${studente.cognome}</td>
-            <td>${studente.dataNascita}</td>
-            <td>${studente.email}</td>
-            <td>${studente.tel}</td>
+            <td>${studente.infoPersonali.CF}</td>
+            <td>${studente.infoPersonali.nome}</td>
+            <td>${studente.infoPersonali.cognome}</td>
+            <td>${studente.infoPersonali.infoNascita.dataNascita}</td>
+            <td>${studente.infoPersonali.email}</td>
+            <td>${studente.infoPersonali.tel}</td>
             <td>${studente.corso}</td>
             <td>${studente.note}</td>
+            <td><a class="btn btn-primary" href="http://" target="_blank" rel="noopener noreferrer">Altro</a></td>
         </tr> `;
         tabella.innerHTML += rowTable;
     });

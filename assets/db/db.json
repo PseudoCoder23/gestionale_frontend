@@ -1,98 +1,50 @@
 [
   {
-    "nome": "John",
-    "cognome": "Snow",
-    "email": "johnsnow@gmail.com",
-    "tel": "3268769878"
+    "infoPersonali": {
+      "nome": "Girolamo",
+      "cognome": "Seghetti",
+      "CF": "ersdfgcbsghdnchg",
+      "email": "girolamo@seghetti.it",
+      "tel": "3245346787",
+      "genere": "M",
+      "infoNascita": {
+        "dataNascita": "2013-12-11",
+        "luogoNascita": "Roma",
+        "nazionalita": "Italiana"
+      },
+      "residenza": {
+        "via": "Via di qua, 11",
+        "cap": "00100",
+        "comune": "Roma",
+        "provincia": "Roma",
+        "nazione": "Italia"
+      }
+    },
+    "corso": "Java",
+    "note": "gnegnegne"
   },
   {
-    "nome": "Thereon",
-    "cognome": "Lannister",
-    "email": "thereonlannister@gmail.com",
-    "tel": "3467890203"
-  },
-  {
-    "nome": "Daenerys",
-    "cognome": "Targarien",
-    "email": "daenerysthargarien@gmail.com",
-    "tel": "3248903546"
-  },
-  {
-    "nome": "pippo",
-    "cognome": "peppo",
-    "email": "peppo@gmail.com",
-    "tel": "123"
-  },
-  {
-    "nome": "pippo",
-    "cognome": "peppo",
-    "email": "peppo@gmail.com",
-    "tel": "123"
-  },
-  {
-    "nome": "pippo",
-    "cognome": "peppo",
-    "email": "peppo@gmail.com",
-    "tel": "123"
-  },
-  {
-    "nome": "pino",
-    "cognome": "scotto",
-    "email": "pino@gmail.com",
-    "tel": "345"
-  },
-  {
-    "nome": "Gigio",
-    "cognome": "Ceppa",
-    "dataNascita": "2000-12-11",
-    "CF": "scavdfebcnhdnfmk",
-    "email": "gigio@ceppa.it",
-    "tel": "2345654378"
-  },
-  {
-    "nome": "Geronimo",
-    "cognome": "Lippo",
-    "dataNascita": "2010-09-12",
-    "CF": "deftr",
-    "email": "geronimolippo@gmail.com",
-    "tel": "3452617890"
-  },
-  {
-    "nome": "Geppo",
-    "cognome": "Gippo",
-    "dataNascita": "2014-12-12",
-    "CF": "qwdscvgftegbdnjp",
-    "email": "geppo@gippo.it",
-    "tel": "3452617890",
-    "corso": "Pizzaiolo",
-    "note": ""
-  },
-  {
-    "nome": "Geppo",
-    "cognome": "Gippo",
-    "dataNascita": "2014-12-12",
-    "CF": "qwdscvgftegbdnjp",
-    "email": "geppo@gippo.it",
-    "tel": "3452617890",
-    "corso": "Pizzaiolo",
-    "note": "provola"
-  },
-  {
-    "nome": "Walter",
-    "cognome": "White",
-    "dataNascita": "1950-02-15",
-    "CF": "whiwlt50p34h501t",
-    "email": "walterwhite@lolpolloshermannos.com",
-    "tel": "2345678987",
-    "corso": "Gelataio",
-    "note": "Heisenberg",
-    "luogoNascita": "Albuquerque",
-    "nazionalita": "Stati Uniti",
-    "genere": "M",
-    "via": "NonLoSo",
-    "cap": "893846",
-    "comune": "Albuquerque",
-    "provincia": "Albuquerque",
-    "pnazione": "New Mexico"
+    "infoPersonali": {
+      "nome": "Girolamo",
+      "cognome": "Seghetti",
+      "CF": "ersdfgcbsghdnchg",
+      "email": "girolamo@seghetti.it",
+      "tel": "3245346787",
+      "genere": "M",
+      "infoNascita": {
+        "dataNascita": "2013-12-11",
+        "luogoNascita": "Roma",
+        "nazionalita": "Italiana"
+      },
+      "residenza": {
+        "via": "Via di qua, 11",
+        "cap": "00100",
+        "comune": "Roma",
+        "provincia": "Roma",
+        "nazione": "Italia"
+      }
+    },
+    "corso": "Java",
+    "note": "gnegnegne"
   }
 ]

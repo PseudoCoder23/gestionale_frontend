@@ -32,12 +32,12 @@ document
 
     /*========== Validazione dati ==========*/
 
-    if (dati.tel.length !== 10 || !/^\d{10}$/.test(dati.tel)) {
+    if (dati.infoPersonali.tel.length !== 10 || !/^\d{10}$/.test(dati.infoPersonali.tel)) {
       alert("Telefono errato");
       return;
     }
 
-    if (dati.CF.length !== 16) {
+    if (dati.infoPersonali.CF.length !== 16) {
       alert("Codice Fiscale Errato");
       return;
     }
