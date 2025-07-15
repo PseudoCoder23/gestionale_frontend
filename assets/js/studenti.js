@@ -19,6 +19,7 @@ fetch("http://localhost:3000/api/studenti/")
         studente.corso,
         studente.note
       );
+      
 
       const tabella = document.getElementById("tabella");
     const rowTable = `
@@ -43,3 +44,7 @@ fetch("http://localhost:3000/api/studenti/")
     document.bodyML += `<span class="text-danger">${error.message}</span>`;
     console.error("Errore fetch:", error);
   });
+
+  function etaMediaStudenti(){
+    anniStudente = dataCorrente().getFullYear() - dataNascitaValue.getFullYear()
+    };

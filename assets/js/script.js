@@ -15,6 +15,16 @@ document
     const formatoLocale = new Intl.DateTimeFormat('it-IT', opzioni).formatToParts(now);
     const parti = Object.fromEntries(formatoLocale.map(({ type, value }) => [type, value]));
 
+    const dataNascitaValue = document.getElementById('dataNascita').value;
+
+    console.log("==================");
+    console.log(dataNascitaValue);
+
+    const dataNascitaValueGirata = giraData(dataNascitaValue);
+    console.log("==================");
+    console.log(dataNascitaValueGirata);
+    
+
     const dati = {
 
       infoPersonali: {
@@ -25,9 +35,11 @@ document
         tel: document.getElementById("telefono_studente").value.trim(),
         genere: document.getElementById("genere").value.trim(),
         infoNascita: {
-          dataNascita: document.getElementById("dataNascita").value.trim(),
+          dataNascita: dataNascitaValue,
+          dataNascitaGirata: dataNascitaValueGirata,
           luogoNascita: document.getElementById("luogoNascita").value.trim(),
           nazionalita: document.getElementById("nazionalita").value.trim(),
+          /* dataNascitaGirata: giraData(dataNascita), */
         },
         residenza: {
           via: document.getElementById("via_studente").value.trim(),
@@ -45,9 +57,15 @@ document
         timestampLocale: `${parti.day}-${parti.month}-${parti.year}_${parti.hour}-${parti.minute}`
       }
 
-
     };
-    console.log(dati);
+    function giraData(data) {
+    console.log(data);
+    
+    const [anno, mese, giorno] = data.split("-");
+    console.log(data.split("-"));
+    
+    return `${giorno}-${mese}-${anno}`; 
+    };
 
 
     inviaDatiAlServer(dati);
@@ -120,5 +138,16 @@ document
     }
 
   });
+
+ /*  dataOriginale = "2025-10-02";
+  console.log(dataOriginale); */
+
+  
+
+   /*  dataConvertita = giraData(dataOriginale);
+    console.log(dataConvertita); */
+    
+    
+    
 
 /*========= GET ========*/

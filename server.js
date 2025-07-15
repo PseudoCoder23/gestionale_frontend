@@ -19,6 +19,9 @@ app.get('/studente/:id', (req, res) => {
   res.sendFile(path.join(__dirname, 'studente.html'));
 });
 
+app.get('/vediStudenti', (req, res) => {
+  res.sendFile(path.join(__dirname, 'vediStudenti.html'));
+});
 
 
 // ✅ Endpoint per studenti
